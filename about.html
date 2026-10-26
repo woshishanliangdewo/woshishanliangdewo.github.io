@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="关于我">
+  <title>关于 · Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html"><span class="dot"></span><span data-bind="name">YOUR NAME</span> / PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="works.html" data-nav="works">成果</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-grid">
+      <div>
+        <div class="eyebrow">About / 关于我</div>
+        <div class="about-name" data-bind="name">YOUR NAME</div>
+        <div class="about-role" data-bind="role">创作者 / 研究者 / 工程师</div>
+        <div class="contact-list">
+          <div class="c-row">
+            <div class="k">邮箱</div>
+            <div><a data-bind="email" href="mailto:hello@example.com">hello@example.com</a></div>
+          </div>
+          <div class="c-row">
+            <div class="k">位置</div>
+            <div data-bind="location">城市 · 国家</div>
+          </div>
+          <div class="c-row">
+            <div class="k">GitHub</div>
+            <div id="about-github">—</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-body" id="about-paragraphs"></div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="contact-block">
+        <div>
+          <h2>一起做点有意思的事。</h2>
+          <p>无论是研究合作、设计项目还是只想聊聊摄影，都欢迎写信给我。</p>
+        </div>
+        <a class="btn btn-light" data-bind="email" href="mailto:hello@example.com">发送邮件 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> <span data-bind="name">YOUR NAME</span>. All rights reserved.</span>
+    <span data-bind="footer-note">Built for GitHub Pages</span>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

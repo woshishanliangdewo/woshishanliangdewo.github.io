@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="个人成果与创作作品展示">
+  <title>个人成果展示 · Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html"><span class="dot"></span><span data-bind="name">YOUR NAME</span> / PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="works.html" data-nav="works">成果</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">个人成果档案 · Personal Archive</div>
+        <h1 class="hero-title"><span data-bind="tagline-top">让每一份</span><br><em data-bind="tagline-em">成果被看见。</em></h1>
+        <p class="hero-intro" data-bind="intro">你好，我是 YOUR NAME。这里记录我的科研论文、项目实践、设计创作与摄影观察。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="works.html">浏览全部成果</a>
+          <a class="btn btn-ghost" href="about.html">关于我</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div>
+          <div class="side-label">身份</div>
+          <div class="side-value" data-bind="role">创作者 / 研究者 / 工程师</div>
+        </div>
+        <div>
+          <div class="side-label">联系</div>
+          <div class="side-value" data-bind="email">hello@example.com</div>
+        </div>
+        <div>
+          <div class="side-label">位置</div>
+          <div class="side-value" data-bind="location">城市 · 国家</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>精选成果 <span class="sub">/ Featured</span></h2>
+        <a class="view-all" href="works.html">查看全部 →</a>
+      </div>
+      <div class="work-grid" id="featured-works"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>分类浏览 <span class="sub">/ Categories</span></h2>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="cta-card">
+        <div>
+          <h2>欢迎交流与合作。</h2>
+          <p>对我的成果感兴趣？想聊聊研究、设计或摄影？随时写信给我。</p>
+        </div>
+        <a class="btn btn-light" data-bind="email" href="mailto:hello@example.com">发送邮件 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> <span data-bind="name">YOUR NAME</span>. All rights reserved.</span>
+    <span data-bind="footer-note">Built for GitHub Pages</span>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

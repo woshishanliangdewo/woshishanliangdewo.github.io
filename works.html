@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="全部个人成果：科研论文、项目成果、设计作品、摄影与其他创作">
+  <title>全部成果 · Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="works">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html"><span class="dot"></span><span data-bind="name">YOUR NAME</span> / PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="works.html" data-nav="works">成果</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-head">
+        <h2>全部成果 <span class="sub">/ All Works</span></h2>
+        <span class="sub" style="font-size:14px;color:var(--muted)">科研 · 项目 · 设计 · 摄影</span>
+      </div>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="work-grid" id="works-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> <span data-bind="name">YOUR NAME</span>. All rights reserved.</span>
+    <span data-bind="footer-note">Built for GitHub Pages</span>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

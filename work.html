@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="成果详情">
+  <title>成果详情</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="work">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html"><span class="dot"></span><span data-bind="name">YOUR NAME</span> / PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="works.html" data-nav="works">成果</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="detail-top">
+      <a class="back-link" href="works.html">← 返回全部成果</a>
+      <span class="cat-badge" id="d-cat-badge"></span>
+    </div>
+
+    <div class="detail-hero">
+      <div id="d-cover"></div>
+      <div class="detail-info">
+        <div class="num-small" id="d-num"></div>
+        <h1 id="d-title"></h1>
+        <div class="detail-meta">
+          <div><div class="k">分类</div><div class="v" id="d-cat"></div></div>
+          <div><div class="k">年份</div><div class="v" id="d-year"></div></div>
+        </div>
+        <p class="detail-summary" id="d-summary"></p>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <section>
+        <h2>项目介绍</h2>
+        <div class="prose" id="d-desc"></div>
+      </section>
+      <section>
+        <h2>创作 / 研究过程</h2>
+        <div id="d-process"></div>
+      </section>
+      <section id="d-links-section">
+        <h2>相关链接</h2>
+        <div id="d-links"></div>
+      </section>
+    </div>
+
+    <nav class="prev-next" id="prev-next"></nav>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> <span data-bind="name">YOUR NAME</span>. All rights reserved.</span>
+    <span data-bind="footer-note">Built for GitHub Pages</span>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
